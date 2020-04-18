@@ -11,7 +11,8 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         //FixedSizeView()
-        FlexibleView()
+        //FlexibleView()
+        PaddingView()
     }
 }
 
@@ -33,6 +34,19 @@ struct FlexibleView: View {
         Text("Hello, Flexible View")
             .frame(minWidth: 100, maxWidth: .infinity)
             .background(Color.blue)
+    }
+}
+
+/*
+ Padding is generated between the content and the borders of the view.
+ if a value was not given for the padding system assigns one by default.
+ */
+
+struct PaddingView: View {
+    var body: some View {
+        Text("Hello, Padding")
+        .padding(20)
+        .background(Color.green)
     }
 }
 
