@@ -10,7 +10,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        FixedSizeView()
+        //FixedSizeView()
+        FlexibleView()
     }
 }
 
@@ -19,6 +20,19 @@ struct FixedSizeView: View {
         Text("Hello, SwiftUI")
             .frame(width: 250, height: 100, alignment: .leading)
             .background(Color.yellow)
+    }
+}
+
+/*
+ Flexible views are defined with the minWidth & maxWidth
+ infinity -> is a type property defined i the CGFloat
+ it is recommend to use both min and max values when making flexible views.
+ */
+struct FlexibleView: View {
+    var body: some View {
+        Text("Hello, Flexible View")
+            .frame(minWidth: 100, maxWidth: .infinity)
+            .background(Color.blue)
     }
 }
 
