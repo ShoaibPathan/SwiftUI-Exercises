@@ -15,7 +15,7 @@ struct ContentView: View {
         //PaddingView()
         //EdgeInsetView()
         //EdgeValueView()
-        SystemFontView()
+        SystemFontView() 
     }
 }
 
