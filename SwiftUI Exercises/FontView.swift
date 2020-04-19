@@ -25,7 +25,16 @@ struct SystemFontView: View {
 struct CustomFontView: View {
     var body: some View {
         Text("Hello, Custom Font")
-            .font(Font.custom("Avenir Next", size: 40))
+            .font(Font.custom("Chalkduster", size: 40))
+    }
+}
+
+struct MultilineFontView: View {
+    var body: some View {
+        Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consectetur est eget ante molestie tempor. Pellentesque in ultrices ligula, non euismod libero. Nulla eu tincidunt eros. Praesent porttitor, arcu non lobortis molestie, turpis dolor euismod nisi, eget interdum mi nisi in lacus. Donec ornare orci at venenatis hendrerit.")
+            .padding()
+            .multilineTextAlignment(.center)
+            .lineSpacing(6)
     }
 }
 
