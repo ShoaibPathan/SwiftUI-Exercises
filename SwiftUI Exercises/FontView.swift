@@ -14,10 +14,18 @@ struct FontView: View {
     }
 }
 
+// Using System font - Apple recommends to use System font
 struct SystemFontView: View {
     var body: some View {
         Text("Hello, System Font")
             .font(Font.system(size: 40))
+    }
+}
+
+struct CustomFontView: View {
+    var body: some View {
+        Text("Hello, Custom Font")
+            .font(Font.custom("Avenir Next", size: 40))
     }
 }
 
