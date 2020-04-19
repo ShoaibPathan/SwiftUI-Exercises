@@ -38,6 +38,15 @@ struct MultilineFontView: View {
     }
 }
 
+struct SingleLineFontView: View {
+    var body: some View {
+        Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consectetur est eget ante molestie tempor. Pellentesque in ultrices ligula, non euismod libero. Nulla eu tincidunt eros. Praesent porttitor, arcu non lobortis molestie, turpis dolor euismod nisi, eget interdum mi nisi in lacus. Donec ornare orci at venenatis hendrerit.")
+        .padding()
+        .lineLimit(1)
+        .truncationMode(Text.TruncationMode.middle)
+    }
+}
+
 struct FontView_Previews: PreviewProvider {
     static var previews: some View {
         FontView()
