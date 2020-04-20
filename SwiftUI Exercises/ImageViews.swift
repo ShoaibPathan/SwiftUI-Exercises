@@ -54,6 +54,13 @@ struct ImageStylingView: View {
     }
 }
 
+struct SFSymbolView: View {
+    var body: some View {
+        Image(systemName: "envelope.circle")
+            .font(Font.system(size: 50))
+    }
+}
+
 struct ImageViews_Previews: PreviewProvider {
     static var previews: some View {
         ImageViews()

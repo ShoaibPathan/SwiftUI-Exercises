@@ -24,7 +24,8 @@ struct ContentView: View {
         //ImageResizedView()
         //ImageAspectView()
         //ImageScaledFillView()
-        ImageStylingView()
+        //ImageStylingView()
+        SFSymbolView()
     }
 }
 
