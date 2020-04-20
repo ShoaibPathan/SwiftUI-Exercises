@@ -16,6 +16,23 @@ struct ImageViews: View {
     }
 }
 
+struct ImageResizedView: View {
+    var body: some View {
+        Image("large")
+        .resizable()
+        .frame(width: 250, height: 100)
+    }
+}
+
+struct ImageAspectView: View {
+    var body: some View {
+        Image("large")
+        .resizable()
+        .aspectRatio(contentMode: .fit) // Or can use scaledToFit()
+        .frame(width: 250, height: 100)
+    }
+}
+
 struct ImageViews_Previews: PreviewProvider {
     static var previews: some View {
         ImageViews()

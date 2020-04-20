@@ -20,7 +20,9 @@ struct ContentView: View {
         //MultilineFontView()
         //SingleLineFontView()
         //ColorView()
-        ImageViews()
+        //ImageViews()
+        //ImageResizedView()
+        ImageAspectView()
     }
 }
 
