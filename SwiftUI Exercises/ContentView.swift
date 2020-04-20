@@ -18,7 +18,8 @@ struct ContentView: View {
         //SystemFontView()
         //CustomFontView()
         //MultilineFontView()
-        SingleLineFontView()
+        //SingleLineFontView()
+        ColorView()
     }
 }
 

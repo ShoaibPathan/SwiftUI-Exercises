@@ -16,11 +16,12 @@ struct ColorView: View {
             
             Color(red: 100/255, green: 234/255, blue: 154/255)
             .frame(width: 250, height: 150)
+            
+            Color("TestColor")
+            .frame(width: 250, height: 150)
         }        
     }
 }
-
-
 
 struct ColorView_Previews: PreviewProvider {
     static var previews: some View {
