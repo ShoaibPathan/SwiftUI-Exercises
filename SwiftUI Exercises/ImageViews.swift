@@ -33,6 +33,16 @@ struct ImageAspectView: View {
     }
 }
 
+struct ImageScaledFillView: View {
+    var body: some View {
+        Image("large")
+        .resizable()
+        .scaledToFill()
+        .frame(width: 250, height: 100)
+        .clipped()
+    }
+}
+
 struct ImageViews_Previews: PreviewProvider {
     static var previews: some View {
         ImageViews()

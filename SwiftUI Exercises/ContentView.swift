@@ -22,7 +22,8 @@ struct ContentView: View {
         //ColorView()
         //ImageViews()
         //ImageResizedView()
-        ImageAspectView()
+        //ImageAspectView()
+        ImageScaledFillView()
     }
 }
 
