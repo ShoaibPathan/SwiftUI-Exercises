@@ -43,6 +43,17 @@ struct ImageScaledFillView: View {
     }
 }
 
+struct ImageStylingView: View {
+    var body: some View {
+        Image("large")
+        .resizable()
+        .scaledToFit()
+        .cornerRadius(20)
+        .padding()
+        .shadow(color: Color.black, radius: 5, x: 5, y: 5)
+    }
+}
+
 struct ImageViews_Previews: PreviewProvider {
     static var previews: some View {
         ImageViews()
