@@ -14,7 +14,7 @@ struct CustomModifierView: View {
             Image(systemName: "envelope.circle")
                 .modifier(CustomModifier())
             Image(systemName: "arkit")
-                .modifier(CustomModifier())
+                    .modifier(CustomModifier())
         }
     }
 }
