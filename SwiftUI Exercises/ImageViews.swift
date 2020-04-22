@@ -61,6 +61,17 @@ struct SFSymbolView: View {
     }
 }
 
+struct ImageAlignmentChangeView: View {
+    var body: some View {
+        Image("large")
+        .resizable()
+        .frame(width: 100, height: 50)
+            .alignmentGuide(VerticalAlignment.center) { (dimentions) -> CGFloat in
+                return dimentions[VerticalAlignment.center] + 20
+        }
+    }
+}
+
 struct ImageViews_Previews: PreviewProvider {
     static var previews: some View {
         ImageViews()
