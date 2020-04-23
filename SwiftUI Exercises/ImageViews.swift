@@ -75,5 +75,6 @@ struct ImageAlignmentChangeView: View {
 struct ImageViews_Previews: PreviewProvider {
     static var previews: some View {
         ImageViews()
+            .environment(\.colorScheme, .dark)
     }
 }
