@@ -55,6 +55,13 @@ struct FlexibleView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group{
+            ContentView()
+            .previewDevice(PreviewDevice(stringLiteral: "iPhone SE"))
+            .previewDisplayName("iPhone SE")
+            ContentView()
+            .previewDevice(PreviewDevice(stringLiteral: "iPhone 11 Pro"))
+            .previewDisplayName("iPhone 11 Pro")
+        }
     }
 }
