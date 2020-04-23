@@ -49,6 +49,14 @@ struct SingleLineFontView: View {
 
 struct FontView_Previews: PreviewProvider {
     static var previews: some View {
-        FontView()
+        Group{
+            FontView()
+                .environment(\.sizeCategory, .small)
+            FontView()
+                .environment(\.sizeCategory, .large)
+            FontView()
+                .environment(\.sizeCategory, .extraLarge)
+        }.previewLayout(PreviewLayout.sizeThatFits)
+        
     }
 }
